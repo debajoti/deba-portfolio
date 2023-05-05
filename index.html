@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debajoti's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5534414fa0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="head">
+        <div class="cont">
+            <nav>
+                <img src="./images/logo.png" id="logo">
+                <ul id="sidemenu">
+                    <li><a href="#head">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#serv">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid ic fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid ic fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="htext">
+                <p>Graphic Designer</p>
+                <h1>Hi, I'm <span>Debajoti</span><br>Chakraborty</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="cont2">
+            <div class="arow">
+                <div class="acol1">
+                    <img src="./images/user.png">
+                </div>
+                <div class="acol2">
+                    <h1 class="stitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere enim repellendus voluptatibus
+                        animi, quos quis, necessitatibus nulla porro quasi ea eius, temporibus quisquam tempora odit
+                        officia incidunt perferendis quam excepturi.</p>
+                    <div class="tabt">
+                        <p class="tabl activetl" onclick="opentab('skills')">Skills</p>
+                        <p class="tabl" onclick="opentab('education')">Education</p>
+                        <p class="tabl" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tabc activetc" id="skills">
+                        <ul>
+                            <li><span>UI/UX Design</span><br>Adobe XD and Figma</li>
+                            <li><span>Front-End Development</span><br>HTML5, CSS3, JS, Bootstrap and TailwindCSS</li>
+                            <li><span>Graphic Design</span><br>Adobe Photoshop, Adobe Illustrator, CorelDRAW, Canva</li>
+                        </ul>
+                        <div class="tabc" id="education">
+                            <ul>
+                                <li><span>Jadavpur University</span><br>BE Electrical Engineering, 2026<br><br>Member of
+                                    Motorsport Club, JU<br><br> Was the member of the team that become 2nd runner-up in
+                                    the Homecoming Event of our Tech Fest Srijan</li>
+                                <li><span>Jadavpur Vidyapith</span><br>Science </li>
+                            </ul>
+                            <div class="tabc" id="experience">
+                                <ul>
+                                    <li><span>UI/UX Design</span><br>Freshman</li>
+                                    <li><span>Front-End Development</span><br>Freshman</li>
+                                    <li><span>Graphic Design</span><br>More than 5 years</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="serv">
+                <div class="cont3">
+                    <h1 class="stitle">My Services</h1>
+                    <div class="slist">
+                        <div>
+                            <i class="fa-brands fa-figma"></i>
+                            <h2>UI/UX Design</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, labore.</p>
+                            <a href="#">learn more</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-desktop"></i>
+                            <h2>Front-End Development</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, labore.</p>
+                            <a href="#">learn more</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <h2>Graphic Design</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, labore.</p>
+                            <a href="#">learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <div class="cont4">
+                    <div class="row">
+                        <div class="conl">
+                            <h1 class="stitle npy">Contact Me</h1>
+
+                            <p> <i class="fa-solid fa-at"></i>contact@gmail.com</p>
+
+                            <p><i class="fa-solid fa-phone"></i>0324422454</p>
+                            <div class="sicons">
+                                <a href=""><i class="fa-brands fa-github"></i></a>
+                                <a href=""><i class="fa-brands fa-reddit"></i></a>
+                                <a href=""><i class="fa-brands fa-discord"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <a href="" class="btn">Download Cv</a>
+                        </div>
+                        <div class="conr">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="text" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span id="msg"></span>
+            <div class="copy">
+                <p>Copyright @Debajoti</p>
+            </div>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbw6jFYLjHMr_qtlfQgTjcMB_n-oqnVvzW3Sd7qw0zNGp4ydtMt8DY4DfdUTlaH6DLUR/exec'
+                const form = document.forms['submit-to-google-sheet']
+                const msg = document.getElementById("msg");
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            msg.innerHTML = "Message sent successfully"
+                            setTimeout(function () {
+                                msg.innerHTML = ""
+                            }, 5000)
+                            form.reset()
+                        })
+                    .catch(error => console.error('Error!', error.message))
+              })
+            </script>
+            <script>
+
+                var tablink = document.getElementsByClassName("tabl");
+                var tabcontent = document.getElementsByClassName("tabc");
+
+                function opentab(tabname) {
+                    for (a of tablink) {
+                        a.classList.remove("activetl");
+                    }
+                    for (b of tabcontent) {
+                        b.classList.remove("activetc");
+                    }
+                    event.currentTarget.classList.add('activetl');
+                    document.getElementById(tabname).classList.add('activetc');
+                }
+
+            </script>
+            <script>
+                var sidemenu = document.getElementById("sidemenu");
+
+                function openmenu() {
+                    sidemenu.style.right = "0";
+                }
+                function closemenu() {
+                    sidemenu.style.right = "-200px";
+                }
+
+            </script>
+</body>
+
+</html>
