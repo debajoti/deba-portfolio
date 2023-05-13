@@ -182,11 +182,13 @@ nav ul li a:hover::after{
 .conl{
     display: inline-block;
     flex-basis: 30%;
+    margin-left: 0px;
 }
 
 .conr{
     display: inline-flex;
     flex-basis: 60%;
+    margin-left: 0px;
 }
 .conl p{
     margin-top: 30px;
@@ -314,7 +316,6 @@ nav .ic{
     margin-top: 20px;
     display: block;
 }
-
 .a{
     display: inline-block;
     margin-left: 100px;
