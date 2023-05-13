@@ -37,17 +37,18 @@
         <div class="cont2">
             <div class="arow">
                 <div class="acol1">
-                    <img src="./images/user.png">
+                    <img src="./images/1683606578118.jpg">
                 </div>
                 <div class="acol2">
                     <h1 class="stitle">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere enim repellendus voluptatibus
-                        animi, quos quis, necessitatibus nulla porro quasi ea eius, temporibus quisquam tempora odit
-                        officia incidunt perferendis quam excepturi.</p>
+                    <p>I am a fresher, pursuing BE in Electrical Engineering at Jadavpur University, Kolkata. I have decent
+                        experience in building websites using HTML,CSS and JavaScript for Front-end Development. As a Graphic
+                        Designer, I am more concerned with UI/UX Design of Front-end. In addition to my skills, I am a quick
+                        learner and am comfortable working in a team environment.</p>
                     <div class="tabt">
                         <p class="tabl activetl" onclick="opentab('skills')">Skills</p>
-                        <p class="tabl" onclick="opentab('education')">Education</p>
-                        <p class="tabl" onclick="opentab('experience')">Experience</p>
+                        <p class="tabl" onclick="opentab('edu')">Education</p>
+                        <p class="tabl" onclick="opentab('exp')">Experience</p>
                     </div>
                     <div class="tabc activetc" id="skills">
                         <ul>
@@ -55,26 +56,27 @@
                             <li><span>Front-End Development</span><br>HTML5, CSS3, JS, Bootstrap and TailwindCSS</li>
                             <li><span>Graphic Design</span><br>Adobe Photoshop, Adobe Illustrator, CorelDRAW, Canva</li>
                         </ul>
-                        </div>
-                        <div class="tabc" id="education">
-                            <ul>
-                                <li><span>Jadavpur University</span><br>BE Electrical Engineering, 2026<br><br>Member of
-                                    Motorsport Club, JU<br><br> Was the member of the team that become 2nd runner-up in
-                                    the Homecoming Event of our Tech Fest Srijan</li>
-                                <li><span>Jadavpur Vidyapith</span><br>Science </li>
-                            </ul>
-                            </div>
-                            <div class="tabc" id="experience">
-                                <ul>
-                                    <li><span>UI/UX Design</span><br>Freshman</li>
-                                    <li><span>Front-End Development</span><br>Freshman</li>
-                                    <li><span>Graphic Design</span><br>More than 5 years</li>
-                                </ul>
+                    </div>
+                    <div class="tabc" id="edu">
+                        <ul>
+                            <li><span>Jadavpur University</span><br>BE Electrical Engineering, 2026<br><br>Member of
+                                Motorsport Club, JU<br><br> Was the member of the team that become 2nd runner-up in
+                                the Homecoming Event of our Tech Fest Srijan</li>
+                            <li><span>Jadavpur Vidyapith</span><br>Science </li>
+                        </ul>
+                    </div>
+                    <div class="tabc" id="exp">
+                        <ul>
+                            <li><span>UI/UX Design</span><br>Freshman</li>
+                            <li><span>Front-End Development</span><br>Freshman</li>
+                            <li><span>Graphic Design</span><br>More than 5 years</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-            <div id="serv">
+        </div>
+    </div>
+    <div id="serv">
                 <div class="cont3">
                     <h1 class="stitle">My Services</h1>
                     <div class="slist">
@@ -102,21 +104,21 @@
             <div id="contact">
                 <div class="cont4">
                     <div class="row">
-                        <div class="conl">
+                        <div class="a conl">
                             <h1 class="stitle npy">Contact Me</h1>
 
-                            <p> <i class="fa-solid fa-at"></i>contact@gmail.com</p>
+                            <p><a id="gmail" href="mailto: djcofficial0029@gmail.com"><i class="fa-solid fa-at"></i>djcofficial0029@gmail.com</a></p>
 
                             <p><i class="fa-solid fa-phone"></i>0324422454</p>
                             <div class="sicons">
-                                <a href=""><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/debajoti"><i class="fa-brands fa-github"></i></a>
                                 <a href=""><i class="fa-brands fa-reddit"></i></a>
                                 <a href=""><i class="fa-brands fa-discord"></i></a>
-                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/debajoti-chakraborty-8700b4276/"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
-                            <a href="" class="btn">Download Cv</a>
+                            <a href="./images/CV.pdf" download class="btn" style="color: #000;">Download Cv</a>
                         </div>
-                        <div class="conr">
+                        <div class="a conr">
                             <form name="submit-to-google-sheet">
                                 <input type="text" name="Name" placeholder="Your Name" required>
                                 <input type="text" name="Email" placeholder="Your Email" required>
@@ -146,15 +148,15 @@
                             }, 5000)
                             form.reset()
                         })
-                    .catch(error => console.error('Error!', error.message))
-              })
+                        .catch(error => console.error('Error!', error.message))
+                })
             </script>
             <script>
 
                 var tablink = document.getElementsByClassName("tabl");
                 var tabcontent = document.getElementsByClassName("tabc");
 
-                function opentab(tabname) {
+                function opentab(x) {
                     for (a of tablink) {
                         a.classList.remove("activetl");
                     }
@@ -162,7 +164,7 @@
                         b.classList.remove("activetc");
                     }
                     event.currentTarget.classList.add('activetl');
-                    document.getElementById(tabname).classList.add('activetc');
+                    document.getElementById(x).classList.add('activetc');
                 }
 
             </script>
