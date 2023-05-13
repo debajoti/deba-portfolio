@@ -314,3 +314,30 @@ nav .ic{
     margin-top: 20px;
     display: block;
 }
+
+.a{
+    display: inline-block;
+    margin-left: 100px;
+}
+#serv{
+    padding: 80px 10%;
+}
+#contact{
+    padding: 80px 10%;
+    margin: 0;
+}
+.a{
+    margin-left: 0;
+}
+.conr form{
+    margin-left: 30px;
+}
+@media (max-width : 1435px) {
+    .conr form{
+        margin-left: 0px;
+    }   
+}
+#gmail{
+    text-decoration: none;
+    color: #fff;
+}
